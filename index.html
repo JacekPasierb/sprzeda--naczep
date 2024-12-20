@@ -17,42 +17,41 @@
     ></script>
   </head>
   <body data-bs-spy="scroll" data-bs-target="#navbar-example">
-    
-      <section id="home" class="home">
-        <div class="container h-100"></div>
-        <div class="hero-shadow"></div>
-      </section>
-      <nav
-        class="navbar navbar-expand-lg navbar-light bg-light py-4 border-bottom sticky-top"
-        id="navbar-example"
-      >
-        <div class="container">
-          <button
-            class="navbar-toggler ms-auto"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav m-auto">
-              <a class="nav-link me-5 active" href="#home">Home</a>
-              <a class="nav-link me-5" href="#aboutus">O Firmie</a>
-              <a class="nav-link me-5" href="#price">Cennik</a>
-              <a class="nav-link" href="#contact">Kontakt</a>
-            </div>
+    <section id="home" class="home">
+      <div class="container h-100"></div>
+      <div class="hero-shadow"></div>
+    </section>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light py-4 border-bottom sticky-top"
+      id="navbar-example"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav m-auto">
+            <a class="nav-link me-5 active" href="#home">Home</a>
+            <a class="nav-link me-5" href="#aboutus">O Firmie</a>
+            <a class="nav-link me-5" href="#price">Cennik</a>
+            <a class="nav-link" href="#contact">Kontakt</a>
           </div>
         </div>
-      </nav>
-  
+      </div>
+    </nav>
+
     <main>
       <section class="aboutus" id="aboutus">
-        <div class="container py-5 aboutus-box">
-          <h3 class="mb-5 py-3">O Firmie</h3>
+        <div class="container py-5 aboutus-box text-center text-md-start">
+          <h3 class="mb-5 py-3 ">O Firmie</h3>
           <div class="row py-4 align-items-center">
             <div class="mb-5 col-md-4 mb-md-0">
               <img
@@ -129,7 +128,7 @@
       <section class="price" id="price">
         <div class="container py-5">
           <div class="price-box">
-            <h3 class="mb-5 py-3">Cennik</h3>
+            <h3 class="mb-5 py-3 text-center text-md-start">Cennik</h3>
             <div class="row">
               <div class="col-md-4">
                 <div class="card mb-5 p-4">
@@ -192,6 +191,65 @@
           </div>
         </div>
       </section>
+      <section class="contact" id="contact">
+        <div class="container py-5">
+          <div class="contact-box">
+            <h3 class="mb-5 py-3 text-center text-md-start">Kontakt</h3>
+            <div class="row">
+              <div class="col-md-5 col-lg-4">
+                <div class="border p-5 mb-4 text-center text-md-start ">
+                  <h2>Adres</h2>
+                  <div class="mt-5 text-muted">
+                    <p class="m-0">Ul. Sezamowa 4</p>
+                    <p class="m-0">Łęczna</p>
+                    <p class="m-0">21-010</p>
+                  </div>
+                  <div class="mt-5 text-muted">
+                    <p class="m-0">+48 040 828 464</p>
+                    <p class="m-0">wpcompany@121.com</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-7 col-lg-8">
+                <div class="border p-5">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group mb-4">
+                          <label class="text-muted">Imię i nazwisko</label
+                          ><input type="text" class="form-control" />
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-group mb-4">
+                          <label class="text-muted">Adres email</label
+                          ><input type="text" class="form-control" />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group mb-4">
+                          <label class="text-muted">Wybierz temat</label
+                          ><select class="form-select">
+                            <option selected>- wybierz temat z listy -</option>
+                            <option>Teamt rozmowy 1</option>
+                            <option>Teamt rozmowy 2</option>
+                            <option>Teamt rozmowy 3</option>
+                            <option>Teamt rozmowy 4</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <label class="text-muted">Treść wiadomości:</label
+                        ><textarea class="form-control" rows="6"></textarea>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -199,6 +257,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/script.js"></script>
-
   </body>
 </html>
